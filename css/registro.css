@@ -1,0 +1,63 @@
+header {
+    height: 50px;
+    background-color: rgb(10, 5, 87);
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(10, 5, 87);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.centrado {
+    margin: 10px auto;
+    display: block;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+form input,
+form select {
+    display: flex;
+    margin: 20px 0px;
+    width: 300px;
+}
+
+form input:invalid,
+form select:invalid {
+    border: 2px solid red !important;
+}
+
+form label {
+    display: inline-block;
+    color: rgba(13, 3, 151, 0.74)
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.modal-header {
+    justify-content: center;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

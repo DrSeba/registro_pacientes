@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Proyecto historial de pacientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="css/registro.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <img class="centrado" src="https://turnosonlinearg.com/wp-content/uploads/2021/09/hospital-britanico-turnos-telefono1111.jpg">
+    <div>
+        <form class="form" action="/pacientes" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="du">Documento Nacional de Identidad</label>
+                <input id="du" type="number">
+            </div>
+            <div class="form-group">
+                <label for="obrasocial">Obra Social</label>
+                <select id="obrasocial">
+                    <option>Swiss Medical</option>
+                    <option>Medicus</option>
+                    <option>Galeno</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechanacimiento">Fecha Nacimiento</label>
+                <input id="fechanacimiento" type="date" min="1900-04-01" max="2022-03-18">
+            </div>
+            <div class="button-group">
+                <button type="button" id="cancelar" class="btn btn-secondary">Cancelar</button>
+                <button type="button" id="guardar" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+    <div id="alertPlaceholder"></div>
+    <footer>
+    </footer>
+    <div class="modal" id="show-error" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Existen campos inválidos en el formulario.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>
